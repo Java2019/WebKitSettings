@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">WebKitSettings</string>
+    <string name="tx_url">URL:</string>
+    <string name="tx_load">Load</string>
+    <string name="mn_urlbar">URL bar</string>
+    <string name="mn_back">&lt;&lt;</string>
+    <string name="mn_refresh">Reload</string>
+    <string name="mn_forward">>></string>
+    <string name="mn_pref">Settings</string>
+    <string name="mn_exit">Exit</string>
+    <string name="hd_options">Options</string>
+    <string name="pk_url">url</string>
+    <string name="pr_url">Startup URL</string>
+    <string name="sm_url">Set startup URL</string>
+    <string name="pk_images">images</string>
+    <string name="pr_images">Load images</string>
+    <string name="sm_images">Enable/disable images for faster page loading</string>
+    <string name="hd_security">Security</string>
+    <string name="pk_jscript">jscript</string>
+    <string name="pr_jscript">Enable Java Script</string>
+    <string name="sm_jscript">Enable/disable Java Script in browser</string>
+    <string name="pk_popup">popup</string>
+    <string name="pr_popup">Block pop-up windows</string>
+    <string name="sm_popup">Enable/disable pop-up windows in browser</string>
+</resources>

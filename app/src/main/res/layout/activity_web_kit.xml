@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:context="com.samples.web.webkitmenu.WebKitActivity">
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:gravity="center">
+            <EditText
+                    android:id="@+id/editeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="http://"
+                    android:gravity="center"/>
+            <Button
+                    android:id="@+id/bLoad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tx_load"
+                    android:gravity="center"/>
+    </LinearLayout>
+    <WebView
+            android:id="@+id/browser"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+</LinearLayout>
