@@ -1,8 +1,11 @@
 package com.samples.web.webkitmenu;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
@@ -46,7 +49,25 @@ public class WebKitActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-
-
+        SharedPreferences prefs =
+                PreferenceManager.getDefaultSharedPreferences(this);
+        // Стартовая страница
+        String url = prefs.getString(getString(R.string.pk_url), "http://");
+        browser.loadUrl(url);
+        // Разрешение загрузки графики на страницу
+        boolean allowImages =
+                prefs.getBoolean(getString(R.string.pk_images), true);
+        // Разрешение использования Java-скриптов
+        boolean allowJScript =
+                prefs.getBoolean(getString(R.string.pk_jscript), true);
+        // Разрешение отображать всплывающие окна
+        boolean allowPopup =
+                prefs.getBoolean(getString(R.string.pk_popup), false);
+        // Устанавливаем новые настройки браузера
+        WebSettings settings = browser.getSettings();
+        settings.setBlockNetworkImage(allowImages);
+        settings.setJavaScriptEnabled(allowJScript);
+        settings.setJavaScriptCanOpenWindowsAutomatically(allowPopup);
+        textUrl.setText(url);
     }
 }
