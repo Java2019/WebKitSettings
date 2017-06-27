@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+            android:title="@string/hd_options">
+        <EditTextPreference
+                android:key="@string/pk_url"
+                android:title="@string/pr_url"
+                android:summary="@string/sm_url"
+                android:defaultValue="http://"
+                android:dialogTitle="@string/pr_url"/>
+        <CheckBoxPreference
+                android:key="@string/pk_images"
+                android:title="@string/pr_images"
+                android:summary="@string/sm_images"
+                android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+            android:title="@string/hd_security">
+        <CheckBoxPreference
+                android:key="@string/pk_jscript"
+                android:title="@string/pr_jscript"
+                android:summary="@string/sm_jscript"
+                android:defaultValue="true"/>
+        <CheckBoxPreference
+                android:key="@string/pk_popup"
+                android:title="@string/pr_popup"
+                android:summary="@string/sm_popup"
+                android:defaultValue="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>
