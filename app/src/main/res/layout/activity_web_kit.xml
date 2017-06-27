@@ -7,6 +7,7 @@
         android:orientation="vertical"
         tools:context="com.samples.web.webkitmenu.WebKitActivity">
     <LinearLayout
+            android:id="@+id/url_bar"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:visibility="visible"
