@@ -1,10 +1,10 @@
 package com.samples.web.webkitmenu;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,7 +15,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 
-public class WebKitActivity extends Activity {
+public class WebKitActivity extends AppCompatActivity {
 
     private static final int IDM_URB = 101;
     private static final int IDM_REFRESH = 102;
